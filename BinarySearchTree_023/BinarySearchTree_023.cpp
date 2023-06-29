@@ -101,13 +101,19 @@ public:
 		}
 	}
 
-	void postoreder(Node* ptr)
+	void postorder(Node* ptr)
 	{
 		// Performs the postorder traversal of the tree
 		if (ROOT == NULL)
 		{
 			cout << "Tree is emty" << endl;
 			return;
+		}
+		if (ptr != NULL)
+		{
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+			cout << ptr->info << " ";
 		}
 	}
 };
