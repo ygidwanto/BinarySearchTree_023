@@ -100,4 +100,14 @@ public:
 			preorder(ptr->rightchild);
 		}
 	}
+
+	void postoreder(Node* ptr)
+	{
+		// Performs the postorder traversal of the tree
+		if (ROOT == NULL)
+		{
+			cout << "Tree is emty" << endl;
+			return;
+		}
+	}
 };
